@@ -2,69 +2,90 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Harshil Bhatia- Portfolio Website</title>
   <link rel="stylesheet" href="./styles/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <button class="darkModeButton" id="toggleDarkMode">Toggle Dark Mode</button>
+
   <header class="heading">
+    <img src="./Data/Portrait.png" alt="Harshil Bhatia" class="profileImage">
     <h1>Hi! My name is Harshil Bhatia</h1>
   </header>
-  <div>
 
-    <p>I am a 2nd Year student at Bhagwan Parshuram Institute of Technology, New Delhi.</p>
-    <p>I am currently pursuing Computer Science</p>
+  <div>
+    <p>I am a 3rd Year student currently pursuing Computer Science at the Bhagwan Parshuram Institute of Technology, New Delhi.
+    </p>
     <p>I am interested in learning about Data Structures and Algorithms. I try to improve by problem solving skills by
       solving questions on platforms like LeetCode and by participating in programming contests on platforms like
       CodeChef.</p>
   </div>
+
   <div>
     <header class="heading">
       <h3>Connect with me</h3>
     </header>
-    <a href="mailto:harshilbhatia02@gmail.com" target="_blank">Gmail</a>
-    <a href="https://www.github.com/harshilbhatia7" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/harshil-bhatia-a0a11b216" target="_blank">LinkedIn</a>
-    <a href="https://www.twitter.com/harshilbhatia7_" target="_blank">Twitter</a>
+
+    <ul class="listOfLinks">
+      <li><a class="link" href="mailto:harshilbhatia02@gmail.com" target="_blank">Gmail</a></li>
+      <li><a class="link" href="https://www.github.com/harshilbhatia7" target="_blank">GitHub</a></li>
+      <li><a class="link" href="https://www.linkedin.com/in/harshilbhatia7" target="_blank">LinkedIn</a></li>
+      <li><a class="link" href="https://www.twitter.com/harshilbhatia7_" target="_blank">Twitter</a></li>
+    </ul>
   </div>
+
   <div>
-    <div>
-      <header class="heading">
-        <h3>See my Resume</h3>
-      </header>
-      <a href="./Data/Resume.html" target="_blank">Resume (HTML)</a>
-      &emsp;<a href="./Data/Resume.pdf" download>Resume (PDF)</a>
-    </div>
-    <p>I am also interested in Web Development. I have been working on improving my frontend and backend stack skills by
-      building projects, and am trying to become a MERN Stack Developer.</p>
-    <h3>See some of the projects I have been working on</h3>
-    <div>
-      <header>
-        <h4>Dodge Bird- Inspired by Flappy Bird</h4>
-      </header>
-      <p>This game has been made using Kaboom.js and is inspired from the game Flappy Bird. Using the original concept
-        of the game, many changes have been made to the game, like theming, multiple difficulty modes- players are
-        allowed to play three different levels which all have varying speeds of objects approaching and thus react
-        accordingly. This project helped me get introduced to game development, and using this library also helped
-        improve my knowledge of JavaScript.</p>
-      <a href="https://dodgebird.harshilbhatia7.repl.co/" target="_blank">Live Demo</a>
-      &ensp;<a href="https://replit.com/@harshilbhatia7/DodgeBird#code/main.js" target="_blank">See Code</a>
-    </div>
-    <div>
-      <header>
-        <h4>Recipe Box- A collection of multi-cultural recipes</h4>
-      </header>
-      <p>This website has been made using React, and making this project helped me gain understanding and experience in
-        using React-router-dom. We can search for different types of recipes, see trending and selected reipes, and even
-        select recipes according to those of different cultures of our world. Making this project and facing some issues
-        helped me improve my knowledge of React.</p>
-      <a href="https://recipe-box-react.netlify.app/" target="_blank">Live Demo</a>
-      &ensp;<a href="https://replit.com/@harshilbhatia7/Recipe-Box#src/App.js" target="_blank">See Code</a>
-    </div>
+    <header class="heading">
+      <h3>See my Resume</h3>
+    </header>
+
+    <ul class="listOfLinks">
+      <li><a class="link" href="./Data/Resume.html" target="_blank">Resume (HTML)</a></li>
+      <li><a class="link" href="./Data/Resume.pdf" target="_blank">Resume (PDF)</a></li>
+    </ul>
   </div>
+
+  <p>I am also interested in Web Development. I have been working on improving my frontend and backend stack skills by
+    building projects, and am trying to become a MERN Stack Developer.</p>
+  <h3>See some of the projects I have been working on</h3>
+
+  <div class="project">
+    <header>
+      <h4>Dodge Bird - Inspired by Flappy Bird</h4>
+    </header>
+
+    <img src="./Data/Dodge Bird Game.png" class="project-img" alt="Dodge Bird Game screenshot">
+
+    <p>This game has been made using Kaboom.js and is inspired from the game Flappy Bird. Using the original concept of
+      the game, the player must navigate a bird through a series of obstacles.</p>
+
+    <ul class="listOfLinks">
+      <li><a class="link" href="https://dodgebird.harshilbhatia7.repl.co/" target="_blank">Live Demo</a></li>
+      <li><a class="link" href="https://replit.com/@harshilbhatia7/DodgeBird#code/main.js" target="_blank">See Code</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <header>
+      <h4>Recipe Box- A collection of multi-cultural recipes</h4>
+    </header>
+
+    <img src="./Data/Recipe Box Website.png" class="project-img" alt="Recipe Box Webiste screenshot">
+
+    <p>This website has been made using React, and making this project helped me gain understanding and experience in
+      using React-router-dom. We can search for different types of recipes, see trending and selected reipes, and even
+      select recipes according to those of different cultures of our world. Making this project and facing some issues
+      helped me improve my knowledge of React.</p>
+
+    <ul class="listOfLinks">
+      <li><a class="link" href="https://recipe-box-react.netlify.app" target="_blank">Live Demo</a></li>
+      <li><a class="link" href="https://replit.com/@harshilbhatia7/Recipe-Box#src/App.js" target="_blank">See Code</a>
+      </li>
+    </ul>
+  </div>
+  <script defer src="./scripts/script.js"></script>
 </body>
 
 </html>
