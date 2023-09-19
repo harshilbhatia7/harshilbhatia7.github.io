@@ -15,6 +15,11 @@ body {
     .navigation-menu ul li {
         font-size: 14px;
         margin: 10px 0;
+        display: none;
+    }
+
+    .darkModeButton {
+        display: block;
     }
 
     #about,
