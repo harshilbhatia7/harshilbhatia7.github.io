@@ -9,24 +9,61 @@ body {
 
 @media (max-width: 768px) {
     body {
-        font-size: 14px;
+        font-size: 18px;
+    }
+
+    .top-bar {
+        padding: 0px;
+        height: 100px;
+        position: fixed;
+        background-color: #007bff;
+    }
+
+    .darkModeButton,
+    .navigation-menu {
+        font-size: 18px;
+        background-color: #007bff;
+        color: #fff;
+    }
+
+    .navigation-menu ul {
+        flex-direction: column;
+        padding: 0;
     }
 
     .navigation-menu ul li {
         font-size: 14px;
         margin: 10px 0;
-        display: none;
     }
 
-    .darkModeButton {
-        display: block;
+    #about {
+        margin-top: 60px !important;
     }
 
-    #about,
-    #contact,
-    #resume,
-    #projects {
-        margin: 20px 0;
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-container {
+        text-align: center;
+    }
+
+    .profileImage {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .profile-container,
+    .about-text {
+        width: 100%;
+    }
+
+    .profile-container h1 {
+        text-align: center;
+        margin-top: 5px;
     }
 }
 
