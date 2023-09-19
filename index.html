@@ -2,27 +2,45 @@
 <html lang="en">
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./styles/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
-  <button class="darkModeButton" id="toggleDarkMode">Toggle Dark Mode</button>
+  <header class="top-bar">
+    <nav class="navigation-menu">
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
 
-  <header class="heading">
-    <img src="./Data/Portrait.png" alt="Harshil Bhatia" class="profileImage">
-    <h1>Hi! My name is Harshil Bhatia</h1>
+    <button class="darkModeButton" id="toggleDarkMode">
+      <i class="fas fa-sun"></i><i class="fas fa-moon"></i>
+    </button>
   </header>
 
-  <div>
-    <p>I am a 3rd Year student currently pursuing Computer Science at the Bhagwan Parshuram Institute of Technology, New Delhi.
-    </p>
-    <p>I am interested in learning about Data Structures and Algorithms. I try to improve by problem solving skills by
-      solving questions on platforms like LeetCode and by participating in programming contests on platforms like
-      CodeChef.</p>
-  </div>
+  <section class="content" id="about">
+    <div class="about-container">
+      <div class="profile-container">
+        <img src="./Data/Portrait.png" alt="Harshil Bhatia" class="profileImage">
+      </div>
+      <div class="about-text">
+        <h1>Hi! My name is Harshil Bhatia</h1>
+        <p>I am a 3rd Year student currently pursuing Computer Science at the Bhagwan Parshuram Institute of Technology,
+          New Delhi.</p>
+        <p>I am interested in learning about Data Structures and Algorithms. I try to improve my problem-solving skills
+          by solving questions on platforms like LeetCode and by participating in programming contests on platforms like
+          CodeChef.</p>
+      </div>
+    </div>
+  </section>
 
-  <div>
+  <section class="content" id="contact">
     <header class="heading">
       <h3>Connect with me</h3>
     </header>
@@ -33,9 +51,9 @@
       <li><a class="link" href="https://www.linkedin.com/in/harshilbhatia7" target="_blank">LinkedIn</a></li>
       <li><a class="link" href="https://www.twitter.com/harshilbhatia7_" target="_blank">X/Twitter</a></li>
     </ul>
-  </div>
+  </section>
 
-  <div>
+  <section class="content" id="resume">
     <header class="heading">
       <h3>See my Resume</h3>
     </header>
@@ -44,79 +62,94 @@
       <li><a class="link" href="./Data/Resume.html" target="_blank">Resume (HTML)</a></li>
       <li><a class="link" href="./Data/Resume.pdf" target="_blank">Resume (PDF)</a></li>
     </ul>
-  </div>
+  </section>
 
-  <p>I am also interested in Web Development. I have been working on improving my frontend and backend stack skills by
-    building projects, and am trying to become a MERN Stack Developer.</p>
-  <h3>See some of the projects I have been working on</h3>
-
-  <div class="project">
-    <header>
-      <h4>Dodge Bird - Inspired by Flappy Bird</h4>
+  <section class="content" id="projects">
+    <header class="heading">
+      <h3>See my Projects</h3>
     </header>
+    <p>I am also interested in Web Development. I have been working on improving my frontend and backend stack skills by
+      building projects, and am trying to become a MERN Stack Developer.</p>
+    <h3>See some of the projects I have been working on</h3>
 
-    <img src="./Data/Dodge Bird Game.png" class="project-img" alt="Dodge Bird Game screenshot">
+    <div class="project">
+      <header>
+        <h4>Dodge Bird - Inspired by Flappy Bird</h4>
+      </header>
 
-    <p>This game has been made using Kaboom.js and is inspired from the game Flappy Bird. Using the original concept of
-      the game, the player must navigate a bird through a series of obstacles.</p>
+      <img src="./Data/Dodge Bird Game.png" class="project-img" alt="Dodge Bird Game screenshot">
 
-    <ul class="listOfLinks">
-      <li><a class="link" href="https://dodgebird.harshilbhatia7.repl.co/" target="_blank">Live Demo</a></li>
-      <li><a class="link" href="https://replit.com/@harshilbhatia7/DodgeBird#code/main.js" target="_blank">See Code</a>
-      </li>
-    </ul>
-  </div>
+      <p>This game has been made using Kaboom.js and is inspired from the game Flappy Bird. Using the original concept
+        of
+        the game, the player must navigate a bird through a series of obstacles.</p>
 
-  <div class="project">
-    <header>
-      <h4>Recipe Box- A collection of multi-cultural recipes</h4>
-    </header>
+      <ul class="listOfLinks">
+        <li><a class="link" href="https://dodgebird.harshilbhatia7.repl.co/" target="_blank">Live Demo</a></li>
+        <li><a class="link" href="https://replit.com/@harshilbhatia7/DodgeBird#code/main.js" target="_blank">See
+            Code</a>
+        </li>
+      </ul>
+    </div>
 
-    <img src="./Data/Recipe Box Website.png" class="project-img" alt="Recipe Box Webiste screenshot">
+    <div class="project">
+      <header>
+        <h4>Recipe Box- A collection of multi-cultural recipes</h4>
+      </header>
 
-    <p>This website has been made using React, and making this project helped me gain understanding and experience in
-      using React-router-dom. We can search for different types of recipes, see trending and selected reipes, and even
-      select recipes according to those of different cultures of our world. Making this project and facing some issues
-      helped me improve my knowledge of React.</p>
+      <img src="./Data/Recipe Box Website.png" class="project-img" alt="Recipe Box Webiste screenshot">
 
-    <ul class="listOfLinks">
-      <li><a class="link" href="https://recipe-box-react.netlify.app" target="_blank">Live Demo</a></li>
-      <li><a class="link" href="https://replit.com/@harshilbhatia7/Recipe-Box#src/App.js" target="_blank">See Code</a>
-      </li>
-    </ul>
-  </div>
+      <p>This website has been made using React, and making this project helped me gain understanding and experience in
+        using React-router-dom. We can search for different types of recipes, see trending and selected reipes, and even
+        select recipes according to those of different cultures of our world. Making this project and facing some issues
+        helped me improve my knowledge of React.</p>
 
-  <div class="project">
-    <header>
-      <h4>Page Plunge- Search for Books</h4>
-    </header>
+      <ul class="listOfLinks">
+        <li><a class="link" href="https://recipe-box-react.netlify.app" target="_blank">Live Demo</a></li>
+        <li><a class="link" href="https://replit.com/@harshilbhatia7/Recipe-Box#src/App.js" target="_blank">See Code</a>
+        </li>
+      </ul>
+    </div>
 
-    <img src="./Data/Page Plunge Website.png" class="project-img" alt="Page Plunge Webiste screenshot">
+    <div class="project">
+      <header>
+        <h4>Page Plunge- Search for Books</h4>
+      </header>
 
-    <p>This website has been made using Next.js, with Axios and TailwindCSS. Along with these technologies, I used HAPI Books API for the backend. In this website, we can search for books of different genres, of different languages, see the top rated categories, and also search for books by id, name. Goodreads page of the respective book can be seen for reviews and other required information. Making this project helped me improve my knowledge of Next.js and Web Development in general.</p>
+      <img src="./Data/Page Plunge Website.png" class="project-img" alt="Page Plunge Webiste screenshot">
 
-    <ul class="listOfLinks">
-      <li><a class="link" href="https://page-plunge.vercel.app/" target="_blank">Live Demo</a></li>
-      <li><a class="link" href="https://github.com/harshilbhatia7/page-plunge" target="_blank">See Code</a>
-      </li>
-    </ul>
-  </div>
+      <p>This website has been made using Next.js, with Axios and TailwindCSS. Along with these technologies, I used
+        HAPI Books API for the backend. In this website, we can search for books of different genres, of different
+        languages, see the top rated categories, and also search for books by id, name. Goodreads page of the respective
+        book can be seen for reviews and other required information. Making this project helped me improve my knowledge
+        of Next.js and Web Development in general.</p>
 
-  <div class="project">
-    <header>
-      <h4>Dwelling Delhi- Real Estate</h4>
-    </header>
+      <ul class="listOfLinks">
+        <li><a class="link" href="https://page-plunge.vercel.app/" target="_blank">Live Demo</a></li>
+        <li><a class="link" href="https://github.com/harshilbhatia7/page-plunge" target="_blank">See Code</a>
+        </li>
+      </ul>
+    </div>
 
-    <img src="./Data/Dwelling Delhi Website.png" class="project-img" alt="Dwelling Delhi Webiste screenshot">
+    <div class="project">
+      <header>
+        <h4>Dwelling Delhi- Real Estate</h4>
+      </header>
 
-    <p>This website has been made using React, and this project serves as the landing page and website of Dwelling Delhi- Real Estate Agents. Different pieces of information can be seen on the website which have been divided into sections like About us, Contact us, etc. Also .</p>
+      <img src="./Data/Dwelling Delhi Website.png" class="project-img" alt="Dwelling Delhi Webiste screenshot">
 
-    <ul class="listOfLinks">
-      <li><a class="link" href="https://dwelling-delhi.netlify.app/" target="_blank">Live Demo</a></li>
-      <li><a class="link" href="https://replit.com/@harshilbhatia7/Dwelling-Delhi#src/App.jsx" target="_blank">See Code</a>
-      </li>
-    </ul>
-  </div>
+      <p>This website has been made using React, and this project serves as the landing page and website of Dwelling
+        Delhi- Real Estate Agents. Different pieces of information can be seen on the website which have been divided
+        into sections like About us, Contact us, etc. Also .</p>
+
+      <ul class="listOfLinks">
+        <li><a class="link" href="https://dwelling-delhi.netlify.app/" target="_blank">Live Demo</a></li>
+        <li><a class="link" href="https://replit.com/@harshilbhatia7/Dwelling-Delhi#src/App.jsx" target="_blank">See
+            Code</a>
+        </li>
+      </ul>
+    </div>
+
+  </section>
   <script defer src="./scripts/script.js"></script>
 </body>
 
